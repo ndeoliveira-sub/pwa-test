@@ -1,0 +1,15 @@
+<mat-toolbar  color="primary">
+  <mat-toolbar-row>
+    <span>List arrests</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<main>
+  <mat-card *ngFor="let item of items">
+    <mat-card-header>
+      <mat-card-title>Category: {{item.Category}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      arrest count: {{item.arrest_count}}
+    </mat-card-content>
+  </mat-card>
+</main>
